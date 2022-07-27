@@ -57,7 +57,4 @@ const calculate = (n1, operator, n2) => {
         return firstNum * secondNum;
     }
 }
-display.textContent = 'on god';
-console.log(900 - 42);
-console.log(70000 * 600 / 12);
-console.log(70000 * 12);
+display.textContent = 'calculate';
