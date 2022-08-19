@@ -1,4 +1,4 @@
-console.log('Hello world!')
+
 const display = document.querySelector('#d-text');
 const keys = document.querySelector('#keys');
 
