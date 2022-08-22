@@ -1,2 +1,2 @@
 # calculator
-Javascript and Css added
+developed with Vanilla Javascript
