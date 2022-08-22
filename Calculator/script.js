@@ -1,4 +1,4 @@
-
+{
 const display = document.querySelector('#d-text');
 const keys = document.querySelector('#keys');
 
@@ -58,3 +58,5 @@ const calculate = (n1, operator, n2) => {
     }
 }
 display.textContent = 'calculate';
+    
+}
