@@ -21,19 +21,19 @@ keys.addEventListener('click', e => {
         action === 'divide' ||
         action === 'multiply'
     )(
-        console.log('Operator key!')
+        
     )
     if (action === 'decimal')(
-        console.log('decimal key')
+       
     )
     if (action === 'delete')(
-        console.log('delete key')
+        
     )
     if (action === 'clear')(
-        console.log('clear')
+       
     )
     if (action === 'calculate')(
-        console.log('calculate key')
+        
     )
 });
 
