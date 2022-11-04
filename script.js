@@ -2,7 +2,7 @@
 const display = document.querySelector('.display');
 const controlKeys = document.querySelector('.control-keys').children;
 
-let allSymbols = ['+', '-', '/', 'x', '%', 'C', '='];
+let allSymbols = ['+', '-', '/', 'x', 'C', '='];
 
 
 let firstNum = '';
@@ -18,7 +18,6 @@ const calculate = () => {
     if (operator === '-') result = firstNum - secondNum
     if (operator === '/') result = firstNum / secondNum
     if (operator === 'x') result = firstNum * secondNum
-    if (operator === '%') result = firstNum % secondNum
 
     display.innerText = result
     firstNum = result
@@ -30,14 +29,20 @@ for (let key of controlKeys){
         const { innerText: keysValue } = key
         const btnValueSymbol =allSymbols.includes(keysValue)
 
+if(keysValue == 'del'){
+   return display.innerText =  display.innerText.toString().slice(0,-1)
+}
+
 if(!secondNum && keysValue === '=') return null
 
-if(keysValue == 'C'){
+
+if(keysValue == 'AC'){
     firstNum = ''
     secondNum =''
     symbol = ''
     return display.innerText=''
 }
+
 
 
 if (firstNum && btnValueSymbol){
@@ -51,4 +56,5 @@ else if (operator) secondNum += keysValue
       if (keysValue !== '=' )  display.innerText += keysValue;
     })
 }
+
 
