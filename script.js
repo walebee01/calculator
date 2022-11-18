@@ -4,7 +4,6 @@ const controlKeys = document.querySelector('.control-keys').children;
 
 let allSymbols = ['+', '-', '/', 'x', 'C', '='];
 
-
 let firstNum = '';
 let secondNum = '';
 let operator = '';
@@ -35,14 +34,12 @@ if(keysValue == 'del'){
 
 if(!secondNum && keysValue === '=') return null
 
-
 if(keysValue == 'AC'){
     firstNum = ''
     secondNum =''
     symbol = ''
     return display.innerText=''
 }
-
 
 
 if (firstNum && btnValueSymbol){
@@ -52,9 +49,6 @@ if (firstNum && btnValueSymbol){
 else if (!operator) firstNum += keysValue
 else if (operator) secondNum += keysValue
 
-
-      if (keysValue !== '=' )  display.innerText += keysValue;
+      if (keysValue !== '=' ) { display.innerText += keysValue;
     })
 }
-
-
