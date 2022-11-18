@@ -41,7 +41,6 @@ if(keysValue == 'AC'){
     return display.innerText=''
 }
 
-
 if (firstNum && btnValueSymbol){
     secondNum && calculate()
     operator = keysValue
